@@ -78,15 +78,69 @@ aside header {
 
 .actions button svg {
     width: 20px;
-           
-}
+}        
 
 .actions button:hover {
     background-color: var(--grey-300);
     transform: translateY(-4px);
+    }
+
+/*search input*/
+
+.search {
+    background-color: var(--grey-900);
+    padding: 5px;
+    /* display: flex;
+    justify-content: center;
+    align items center*/
+
+}
+
+.search form input {
+    width: 100%;
+    display: block;
+    border: none;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: var(--grey-700);
+    color: yellow;
+    outline: none;
     
 }
 
+.search input:focus {
+    outline: solid 1px var(--grey-200)
+}
 
+.chats {
+    background-color: var(--grey-900);
+    
+}
 
-/*search input*/
+.chats ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+
+.user-chat {
+    background-color: var(--grey-900);
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.user-chat img {
+    border-radius: 50px;
+    width: 60px;
+    
+}
+.user-chat:hover {
+    background-color: var(--grey-700);
+     cursor: pointer;
+     border-left: 3px solid var(--green-300);
+}
+
