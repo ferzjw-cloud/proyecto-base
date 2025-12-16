@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    font-family: var(--primary-font)
 
+}
 :root { --background-app: #007A56;
         --grey-900: #0E1719;
         --grey-700: #3B464B;
@@ -12,11 +13,6 @@
         --grey-200: #6e6e6f;
         --green-100: #ffffff;
         --green-button: #00322B;
-
-
-
-
-
-
+        --primary-font: "Roboto", sans-serif;
 
 }
