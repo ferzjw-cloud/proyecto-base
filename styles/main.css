@@ -148,14 +148,6 @@ aside header {
 
 /*message panel*/
 
-.app {
-    grid-template-columns: 1fr;
-}
-
-aside {
-    display: none;
-}
-
 .chat-header {
     background-color: var(--grey-200);
     border-bottom: 1px solid var(--grey-200);
@@ -176,6 +168,41 @@ aside {
 }
 /*agregar estilos para los mensajes*/
 
+.chat-pannel {
+    display: flex;
+    flex-direction: column;
+}
+
+.messages {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.message {
+    background-color: var(--grey-300);
+    padding: 10px;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.800);
+    }
+
+.message .time {
+    color: var(--green-button);
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: end;
+} 
+
+.me {
+    align-self: end;
+    background-color: var(--green-300);
+}
+    
+
+/*footer styles*/
 
 footer {
     display: flex;
@@ -254,4 +281,17 @@ footer .send {
 footer .send:hover {
     background-color: #007A56;
     transform: scale(0.97);
+}
+
+/*responsive design*/
+
+@media (max-width: 880px) {
+    .app {
+    grid-template-columns: 1fr;
+}
+
+    aside {
+    display: none;
+}
+
 }
