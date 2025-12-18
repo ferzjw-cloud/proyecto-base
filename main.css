@@ -56,6 +56,14 @@ aside header {
 .profile img {
     width: 60px;
     border-radius: 50%;
+    }
+
+.profile:hover {
+    background-color: var(--grey-700);
+    border-radius: 5px;
+    transform: translateY(-4px);
+    cursor: pointer;
+    color: greenyellow;
 }
 
 .profile h2 {
@@ -83,8 +91,9 @@ aside header {
 }        
 
 .actions button:hover {
-    background-color: var(--grey-300);
+    background-color: var(--grey-700);
     transform: translateY(-4px);
+    color: greenyellow;
     }
 
 /*search input*/
@@ -116,7 +125,6 @@ aside header {
 
 .chats {
     background-color: var(--grey-900);
-    
 }
 
 .chats ul {
@@ -144,6 +152,7 @@ aside header {
     background-color: var(--grey-700);
      cursor: pointer;
      border-left: 3px solid var(--green-300);
+     color: yellow;
 }
 
 /*message panel*/
@@ -171,7 +180,7 @@ aside header {
 .chat-pannel {
     display: flex;
     flex-direction: column;
-}
+    }
 
 .messages {
     padding: 20px;
@@ -179,15 +188,16 @@ aside header {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    overflow-y: auto;
-}
+    overflow-y: scroll;
+    }
 
 .message {
-    background-color: var(--grey-300);
+    background-color: beige;
     padding: 10px;
     width: 60%;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.800);
+    font-style: italic;
     }
 
 .message .time {
@@ -201,8 +211,7 @@ aside header {
     align-self: end;
     background-color: var(--green-300);
 }
-    
-
+ 
 /*footer styles*/
 
 footer {
@@ -217,14 +226,16 @@ footer {
 footer button {
     width: 30px;
     height: 30px;
-    padding: 5px;
+    padding: 3px;
+    margin: 10px;
     
 }
 
 footer svg {
     width: 100%;
     height: 100%;
-    padding: 5px;
+    padding: 2px;
+    
     }
 
 footer form {
@@ -237,15 +248,22 @@ footer form textarea {
 }
 
 footer .attach {
-    background-color: transparent;
+    background-color: var(--grey-700);
     border: none;
+    border-radius: 15px;
     cursor: pointer;
-    color: var(--grey-700);
-    transition: color .3s;
+    color: var(--grey-200);
+    transition: color .2s;
+    width: 50px;
+    height: 30px;
 }
 
 footer .attach:hover {
-    color: var(--grey-900)
+    background-color: var(--grey-900);
+    transform: scale(1.1);
+    border: solid 1px;
+    color: white; 
+    
     }
 
 footer .form {
@@ -255,11 +273,12 @@ footer .form {
     }
 
 footer textarea {
-    padding: 8px;
+    padding: 5px;
     resize: none;
     border-radius: 10px;
     border: none;
     width: 100%;
+    margin: 10px;
 }
 
 footer textarea:focus {
@@ -272,7 +291,7 @@ footer .send {
     border: none;
     cursor: pointer;
     color: white;
-    width: 45px;
+    width: 50px;
     height: 30px;
     border-radius: 15px;
     padding: 5px;
@@ -281,7 +300,11 @@ footer .send {
 
 footer .send:hover {
     background-color: #007A56;
-    transform: scale(0.97);
+    transform: scale(1.1);
+    border: solid 1px;
+    color: white;
+
+
 }
 
 /*responsive design*/
