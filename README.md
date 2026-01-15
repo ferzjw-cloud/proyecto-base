@@ -26,3 +26,4 @@ Se practico el uso de **flexbox** a fin de organizar elementos y que estos se ad
 El repositorio contiene commits frecuentes y descriptivos, documentando el avance de la maquetación paso a paso.
 
 _Nota: Reorganicé los archivos en la carpeta local y borré archivos que fui generando a medida que avanzaba en el TP_
+# continue-clon-de-whatsapp
